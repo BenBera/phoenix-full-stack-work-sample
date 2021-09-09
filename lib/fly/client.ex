@@ -229,6 +229,17 @@ defmodule Fly.Client do
               updatedAt
             }
           }
+          deploymentStatus{
+            description
+            successful
+            id
+            desiredCount
+            status
+            healthyCount
+            unhealthyCount
+            placedCount
+            version
+          }
         }
       }
     """

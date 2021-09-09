@@ -223,7 +223,56 @@
                             </table>
                           </div>
                           </div>
-                          <div class="mx-auto px-4">Instances
+                          <div class="mx-auto px-4">Deployement Status 
+                          <div class="overflow-hidden border-b border-gray-200">
+                          <table class="min-w-full divide-y divide-gray-200">
+                          <thead class="bg-gray-50">
+                          <tr>
+                          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    id
+                                  </th>
+                                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    version
+                                  </th>  
+                                   <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    status
+                                  </th> 
+                                   <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Description
+                                  </th> 
+                                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Instances
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody class="bg-white divide-y divide-gray-200">
+                                  <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                       <%= @app["deploymentStatus"]["id"] %>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                   <%= @app["deploymentStatus"]["version"] %>
+                                    </td>  
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                <%= @app["deploymentStatus"]["status"] %>
+                                    </td> 
+                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                               <%= @app["deploymentStatus"]["description"] %>
+                                    </td>  
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                   <%= @app["deploymentStatus"]["desiredCount"] %> 
+                                   <%= @app["deploymentStatus"]["placedCount"] %>
+                                   <%= @app["deploymentStatus"]["healthyCount"] %>
+                                   <%= @app["deploymentStatus"]["unhealthyCount"] %>
+                                    </td>  
+                                    </tr>
+                                
+                              </tbody>
+                            </table>
+                          </div>
+                          </div> 
+                          
+                          <div class="mx-auto px-4">Instances 
                           <div class="overflow-hidden border-b border-gray-200">
                           <table class="min-w-full divide-y divide-gray-200">
                           <thead class="bg-gray-50">
